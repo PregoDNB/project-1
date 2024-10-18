@@ -1,0 +1,470 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: Roboto, Verdana, sans-serif;
+    font-size: 23px;
+    color: black;
+    background-color: rgb(255, 253, 251);
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+/*---------------------- General ----------------------*/ 
+
+h1 {
+    font-family: Montserrat, Verdana, sans-serif;
+    font-size: 30px;
+    background-color: #5A9AEC;
+    padding: 15px;
+}
+h1 strong {
+    font-weight: 600;
+}
+
+h2 {
+    font-family: Montserrat, Verdana, sans-serif;  
+    font-size: 80px;
+}
+
+a button {
+    font-size: 20px;
+    background: #ECC94B;
+    border: none;
+    padding: 20px 7% 20px 7%;
+    border-radius: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,0.2);
+}
+
+a button:hover {
+    background: #f6d14d;
+    cursor: pointer;
+}
+
+/*---------------------- Navigatie Section ----------------------*/ 
+
+nav {
+    font-family: Montserrat, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+}
+
+nav img {
+    width: 75px;
+    margin: 0px auto 20px 0px;
+    padding-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav li {
+    padding: 40px;
+
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #919191;
+}
+
+
+nav li a strong{
+    text-decoration: underline;
+}
+
+.navigatie_lijn {
+    border-top: 1px solid black;
+    margin-top: -15px;
+    margin-left: -100%;
+    margin-right: -17.6%;
+}
+
+
+/*---------------------- Homepage ----------------------*/ 
+
+header {
+    margin-top: 8%;
+    display: flex;
+}
+
+header img {
+    background-color: lightgray;
+    max-width: 30%;
+    max-height: 30%;
+}
+
+header .voorstelling {
+    margin-top: 9%;
+}
+
+header .voorstelling p {
+    padding: 1% 20% 1% 5%;
+}
+
+header .voorstelling .button {
+    text-align: center;
+    padding-top: 6%;
+}
+
+header .voorstelling .icons {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 3%;
+}
+
+header .voorstelling .icons a{
+    margin: 0px 7px 0px 7px;
+    text-decoration: none;
+    color: black;
+}
+
+
+header .voorstelling .icons a:hover {
+    color: #5A9AEC;
+}
+
+/*---------------------- HomePage CV Section ----------------------*/ 
+
+.cv {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cv h2 { margin-bottom: 40px; }
+
+.cv .cvbarbutton {
+    text-align: center;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0 auto;
+    margin-bottom: 50px;
+}
+
+.progress-bar label {
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.progress-bar progress { 
+    background:none;
+    width: 450px;
+}
+
+.progress-bar progress::-webkit-progress-bar {
+	height: 30px;
+	width: 100%;
+	background-color:#dadada;
+	border-radius: 100px;
+}
+.progress-bar progress::-webkit-progress-value {
+    padding-left: 50px;
+	background: #5A9AEC;
+
+	border-radius: 100px;
+}
+
+
+/*---------------------- Homepage CV Section ----------------------*/ 
+
+.ervaring {
+    display: flex;
+    margin-top: 80px;
+}
+
+.ervaring-tekst { margin-right: 80px; }
+
+.vaardigheden { text-align: center; }
+
+.vaardigheden .ervaring-right {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: -170px;
+}
+    
+.div1 { grid-area: 1 / 1 / 2 / 4; }
+.div2 { grid-area: 1 / 4 / 4 / 6; }
+.div3 { grid-area: 2 / 1 / 3 / 3; }
+
+.vaardigheden .ervaring-left { 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: -170px;
+}
+
+.div4 { grid-area: 1 / 3 / 2 / 6; }
+.div5 { grid-area: 1 / 1 / 4 / 3; }
+.div6 { grid-area: 2 / 3 / 4 / 5; }
+
+.vaardigheden article {
+    margin-top: 40px;
+}
+
+.vaardigheden article h3 {
+    background: #5A9AEC;
+    margin-top: 5%;
+    text-align: left;
+    padding: 25px 0px 25px 25px;
+}
+
+.vaardigheden article img {
+    width: 100%;
+}
+
+.vaardigheden .div3 {
+    text-align: left;
+    background: #E2E8F0;
+}
+
+.vaardigheden a button {
+    margin-top: 50px;
+}
+
+
+
+/*---------------------- CV Page ----------------------*/ 
+
+header .cv-intro h2{ 
+    background: #5A9AEC;
+    padding: 3px 0px 3px 20px;
+    margin-bottom: 20px;
+}
+
+
+header .cv-intro .intro { 
+    margin-left: 60px; 
+    margin-bottom: 40px;
+}
+
+h4 {
+    display: flex;
+    font-family: Montserrat, Verdana, sans-serif;
+    background: #5A9AEC;
+    margin-bottom: 30px;
+    padding: 10px 0px 10px 20px;
+}
+
+.opleiding { 
+    margin-left: 60px; 
+    margin-bottom: 15px;
+    margin-top: 20px;
+ }
+
+ .richting { 
+    margin-left: 100px;
+    margin-bottom: 40px;
+    font-weight: 300;
+
+ }
+ .richting:last-of-type { margin-bottom: 50px; }
+
+ .vaardigheden-cv .progress-bar { margin-left: 60px;  }
+
+.vaardigheden-button { text-align: center; }
+
+
+
+/*---------------------- Ervaring Page ----------------------*/
+
+
+.vaardigheden .ervaring-right p { text-align: start; }
+
+.vaardigheden .ervaring-left p { text-align: end; }
+
+
+
+
+/*---------------------- Hobby page ----------------------*/ 
+
+
+.hobby-section { display: flex; }
+
+.hobby-section h2 { margin: 60px 60px 0px 0px}
+
+.hobby-section .hobby-right {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: -170px;
+}
+
+.div7 { grid-area: 1 / 1 / 2 / 4; }
+.div8 { 
+    grid-area: 2 / 1 / 4 / 3; 
+    margin-left: 50px;
+    padding: 20px 50px;
+    text-align: left;
+    background-color: #E2E8F0;
+}
+.div9 { grid-area: 1 / 4 / 4 / 6; }
+
+.hobby-section .hobby-left {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: -170px;
+}
+.div10 { grid-area: 1 / 3 / 2 / 6; }
+.div11 { 
+    grid-area: 2 / 3 / 4 / 5;
+    margin-left: 50px;
+    text-align: left;
+    padding: 20px 50px;
+    background-color: #E2E8F0;
+ }
+.div12 { grid-area: 1 / 1 / 4 / 3; }
+
+
+
+/*---------------------- Contact Page ----------------------*/
+
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact .contact-container {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.contact form input { 
+    background-color: #E2E8F0;
+    border-style: none;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.contact .contact-container .naam form input{
+    padding: 20px 0px 20px 0px;
+    width: 300px;
+    margin: 20px 60px 0px 0px;
+}
+.contact .contact-container .email form input {
+    padding: 20px 0px 20px 0px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.contact .bericht form input{
+    padding: 20px 0px 200px 0px;
+    width: 663px;
+    margin: 20px 60px 0px 60px;
+}
+
+.contact .button{
+    margin-top: 50px;
+    margin-left: 60px;
+    font-size: 20px;
+    background: #ECC94B;
+    border: none;
+    padding: 20px 8% 20px 8%;
+    border-radius: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,0.2);
+}
+
+.contact .button:hover {
+    background: #f6d14d;
+    cursor: pointer;
+}
+
+.button-socials {
+    display: flex;
+    align-items: center;
+
+}
+
+.social-tab {
+    text-align: end;
+    margin-left: 25%;
+}   
+
+.button-socials a { 
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+.button-socials a:hover { color: #5A9AEC; }
+
+/*---------------------- Footer ----------------------*/ 
+
+
+footer {
+    margin-left: -17.6%;
+    margin-right: -17.6%;
+    height: 300px;
+    background: #4C4C4C;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+footer .footer-nav {
+    padding-top: 70px;
+}
+
+footer .footer-nav ul {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-nav li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #919191;
+}
+
+footer .footer-nav ul li strong {
+    text-decoration: underline;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0px 20px 0px 20px;
+}
+
+footer .footer-icons {
+    padding-top: 25px;
+    font-size: 40px;
+    text-align: center;
+}
+
+footer .footer-icons a { padding: 15px; }
+
+footer .footer-icons a:hover { color: #5A9AEC; }
+
+footer p {
+    padding-top: 40px;
+    font-size: 20px;
+}
